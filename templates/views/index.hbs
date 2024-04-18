@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/icon.png">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Weather App</title>
+</head>
+
+<body>
+    {{>header}}
+    <br>
+    <br>
+
+    <div class="weather-search-container">
+        <h2>Today's Forecast</h2>
+        <form>
+            <input type="text" name="location" placeholder="Location">
+            <div id="error-message-box">
+                <span id="error-message"></span>
+            </div>
+            <button type="submit">Search</button>
+        </form>
+    </div>
+
+    <br>
+    <div id="forecast-box">
+        <p id="message-one"></p>
+        <p id="message-two"></p>
+    </div>
+    
+    {{>footer}}
+    <script src="/js/app.js"></script>
+</body>
+
+</html>
