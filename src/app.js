@@ -63,7 +63,7 @@ app.get('/weather', (req, res) => {
 });
 
 //serve static file
-// app.use(express.static(publicPath));
+app.use(express.static(publicPath));
 
 //serve inline content
 app.get('/', (req, res) => {
